@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <time.h>
 #include <assert.h>
+#include <sys/types.h>
 
 
 #define REAL 1 /* real address from malloc */
@@ -19,3 +20,4 @@ struct addrtype
 
 void generatefakeorrealaddr_64(struct addrtype* save_to, size_t amount);
 void freefakeorrealaddr_64(struct addrtype* save_to);
+unsigned long long rand64(void);

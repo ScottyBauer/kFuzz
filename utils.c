@@ -2,7 +2,18 @@
 
 
 
-int trueorfalse(){
+
+pid_t getfakeorrealpid(void)
+{
+	if(trueorfalse())
+		return getpid();
+	return rand() % 32768; //usually max pid on most systems
+}
+
+       
+
+int trueorfalse()
+{
 	return rand() % 2;
 }
 

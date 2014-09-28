@@ -35,7 +35,6 @@ static void do_gr_fuzzing(void)
 
 }
 
-
 void getrandom_fuzz(int amount)
 {
 	loops = amount;
