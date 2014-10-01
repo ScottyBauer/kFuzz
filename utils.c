@@ -18,6 +18,10 @@ int trueorfalse()
 }
 
 unsigned long long rand64(){
+
+	/* TODO
+	   RAND will return the MSB AS ZERO, << by 33? 
+	*/
 	unsigned long long result = rand();
 	result <<= 32;
 	result |= rand();

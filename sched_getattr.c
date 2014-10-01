@@ -15,14 +15,11 @@ static void do_g_attrfuzzing(void)
 	struct addrtype faux_real;
 	unsigned int size; 
 	unsigned int flags;
-	
-
 	while(loops--){
-		
 		size = rand() % 4097;
 		flags = rand();
 		pid = getfakeorrealpid();
-		generatefakeorrealaddr_64(&faux_real);
+		generatefakeorrealaddr_64(&faux_real,size);
 
 		syscall(__NR_schedgetattr, pid, faux_real.addr, 
 			size, flags);
