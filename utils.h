@@ -18,6 +18,7 @@ struct addrtype
 };
 
 
+pid_t getfakeorrealpid(void);
 void generatefakeorrealaddr_64(struct addrtype* save_to, size_t amount);
 void freefakeorrealaddr_64(struct addrtype* save_to);
 unsigned long long rand64(void);

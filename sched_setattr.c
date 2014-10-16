@@ -85,7 +85,7 @@ static void do_s_attrfuzzing(void)
 }
 
 
-void sched_setattrfuzz(int amount)
+void sched_setattrfuzz(unsigned int amount)
 {
 	loops = amount;
 	do_s_attrfuzzing();

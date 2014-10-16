@@ -1,7 +1,10 @@
 #include "utils.h"
 
 
-
+int trueorfalse(void)
+{
+	return rand() % 2;
+}
 
 pid_t getfakeorrealpid(void)
 {
@@ -10,14 +13,7 @@ pid_t getfakeorrealpid(void)
 	return rand() % 32768; //usually max pid on most systems
 }
 
-       
-
-int trueorfalse()
-{
-	return rand() % 2;
-}
-
-unsigned long long rand64(){
+unsigned long long rand64(void){
 
 	/* TODO
 	   RAND will return the MSB AS ZERO, << by 33? 
