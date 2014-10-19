@@ -28,7 +28,7 @@ unsigned long long rand64(void){
 void freefakeorrealladdr_64(struct addrtype* inc)
 {
 	assert(inc != NULL);
-	if(inc->type == REAL){
+	if(inc->type == REAL || inc->type == PAGED){
 		free(inc->addr);
 	}
 	return;

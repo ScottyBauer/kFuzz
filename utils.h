@@ -9,6 +9,7 @@
 
 #define REAL 1 /* real address from malloc */
 #define FAKE 0 /* fake address from rand64() */
+#define PAGED 2
 
 struct addrtype
 {
